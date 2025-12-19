@@ -7,7 +7,7 @@ on:
       action:
         description: 'start or stop'
         required: true
-        default: 'stop'
+        default: 'start'
       private_ip:
         description: 'EC2 private IP'
         required: true
