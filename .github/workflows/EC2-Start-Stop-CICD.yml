@@ -8,15 +8,15 @@ on:
         description: 'start or stop'
         required: true
         default: 'start'
-      private_ip:
-        description: 'EC2 private IP'
-        required: true
+      # private_ip:
+      #   description: 'EC2 private IP'
+      #   required: true
       tag_key:
         description: 'Tag key'
         required: true
-      tag_value:
-        description: 'Tag value'
-        required: true
+      # tag_value:
+      #   description: 'Tag value'
+      #   required: true
 
   
 
