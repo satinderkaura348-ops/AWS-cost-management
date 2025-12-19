@@ -17,9 +17,7 @@ on:
       tag_value:
         description: 'Tag value'
         required: true
-  push:
-    branches:
-      - dev
+
   
 
 
