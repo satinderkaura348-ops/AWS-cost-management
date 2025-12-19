@@ -2,23 +2,23 @@ name: EC2 Start/Stop
 
 on:
   workflow_dispatch:
-    push:
+  push:
     branches:
       - dev
-    inputs:
-      action:
-        description: 'start or stop'
-        required: true
-        default: 'stop'
-      private_ip:
-        description: 'EC2 private IP'
-        required: true
-      tag_key:
-        description: 'Tag key'
-        required: true
-      tag_value:
-        description: 'Tag value'
-        required: true
+    # inputs:
+    #   action:
+    #     description: 'start or stop'
+    #     required: true
+    #     default: 'stop'
+    #   private_ip:
+    #     description: 'EC2 private IP'
+    #     required: true
+    #   tag_key:
+    #     description: 'Tag key'
+    #     required: true
+    #   tag_value:
+    #     description: 'Tag value'
+    #     required: true
 
   
 
