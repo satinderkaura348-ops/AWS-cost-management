@@ -2,9 +2,6 @@ name: EC2 Start/Stop
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - dev
     inputs:
       action:
         description: 'start or stop'
@@ -19,6 +16,11 @@ on:
       tag_value:
         description: 'Tag value'
         required: true
+
+  
+  push:
+    branches:
+      - dev
 
 jobs:
   ec2_control:
