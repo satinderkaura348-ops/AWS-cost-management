@@ -2,14 +2,12 @@ name: EC2 Start/Stop
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - dev
+
     inputs:
       action:
         description: 'start or stop'
         required: true
-        default: 'stop'
+        default: 'start'
       private_ip:
         description: 'EC2 private IP'
         required: true
@@ -20,6 +18,9 @@ on:
         description: 'Tag value'
         required: true
 
+  
+
+
 jobs:
   ec2_control:
     runs-on: ubuntu-latest
@@ -28,7 +29,7 @@ jobs:
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        aws-region: ap-south-1  
+        aws-region: ap-southeast-2  
 
     - name: Start/Stop EC2
       run: |
