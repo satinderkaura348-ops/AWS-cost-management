@@ -110,13 +110,13 @@ Improved operational efficiency
 ```
 
 **📌 Future Improvements**
-``
+```
 Slack / Teams notifications
 
 Multi-environment support (dev / test / prod)
 
 Instance group selection by environment tags
-``
+```
 **📎 Notes**
 ```
 This project demonstrates a real-world FinOps + DevOps use case, combining automation with practical operational flexibility.
@@ -163,3 +163,4 @@ Stop if stop is selected
 
 No code changes are required — simply edit the start/stop value to control EC2 behavior
 ```
+
